@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Wow!! your 1st class is added.."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:padding="5dp"
+        android:textColor="@android:color/holo_orange_dark"
+
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"
+        android:textAlignment="center" />
+    <TextView
+        android:text="Now you will see your Class name and Class Description like this architecture bellow. You can modifie this class by press and hold on this architecture and clicking on this you will get next step."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:padding="5dp"
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"
+        android:textAlignment="textStart" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_blue_bright"
+        ></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:text="Class Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/classNameLV_TV"
+                android:textSize="24sp"
+                android:textColor="@android:color/holo_green_light"
+                android:fontFamily="monospace" />
+
+            <TextView
+                android:text="Class Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/classDetailsLV_TV"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:text="Got It"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_green_light"
+        android:id="@+id/gotit" />
+</LinearLayout>

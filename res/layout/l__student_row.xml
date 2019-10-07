@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="49dp"
+            app:srcCompat="@drawable/icon"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/StudentID_LV_TV"
+                android:textSize="24sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textStyle="normal|bold"
+                android:textAlignment="viewStart" />
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/studentNameLV_TV"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textAlignment="viewStart" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
